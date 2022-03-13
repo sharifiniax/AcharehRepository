@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/achareh_nav"
+    app:startDestination="@id/mapsFragment">
+
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="co.achareh.interview.ui.enterinfo.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_informationFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="co.achareh.interview.ui.map.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_showDataFragment"
+            app:destination="@id/showDataFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_informationFragment"
+            app:destination="@id/informationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDataFragment"
+        android:name="co.achareh.interview.ui.showinfo.ShowDataFragment"
+        android:label="fragment_show_data"
+        tools:layout="@layout/fragment_show_data" >
+        <action
+            android:id="@+id/action_showDataFragment_to_informationFragment"
+            app:destination="@id/informationFragment" />
+    </fragment>
+</navigation>
