@@ -18,26 +18,23 @@
             android:id="@+id/announcing"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:background="@drawable/circular_shape"
-            android:backgroundTint="@color/material_dynamic_neutral80"
             android:padding="16dp"
-            android:text="لطفا اطلاعات ورود خود را وارد نمایید."
+            android:text="@string/completeInformation"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/first_name"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/next_button_up"
-            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <ImageView
             android:id="@+id/next_button_up"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:src="@drawable/ic_baseline_arrow_back_24"
-            app:layout_constraintBottom_toBottomOf="@+id/announcing"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toTopOf="@+id/announcing"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
             app:layout_constraintVertical_bias="0.514" />
 
         <EditText
@@ -45,12 +42,14 @@
             android:id="@+id/first_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/circular_shape"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
             android:ems="10"
+            android:gravity="center|right"
             android:hint="نام"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:padding="16dp"
             app:layout_constraintBottom_toTopOf="@+id/last_name"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -62,12 +61,14 @@
             android:id="@+id/last_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/circular_shape"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
             android:ems="10"
+            android:gravity="center|right"
             android:hint="نام خانوادگی"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:padding="16dp"
             app:layout_constraintBottom_toTopOf="@+id/cellphone"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -78,15 +79,17 @@
             android:id="@+id/cellphone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/circular_shape"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
             android:digits="1234567890"
             android:ems="10"
-            android:gravity="right"
+            android:gravity="center|right"
             android:hint="تلفن همراه"
+            android:imeOptions="actionNext"
             android:inputType="phone"
             android:maxLength="11"
             android:minHeight="48dp"
+            android:padding="16dp"
             app:guidelineUseRtl="false"
             app:layout_constraintBottom_toTopOf="@+id/phone"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -98,15 +101,17 @@
             android:id="@+id/phone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/circular_shape"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
             android:digits="1234567890"
             android:ems="10"
-            android:gravity="right"
+            android:gravity="center|right"
             android:hint="تلفن ثابت"
+            android:imeOptions="actionNext"
             android:inputType="phone"
             android:maxLength="11"
             android:minHeight="48dp"
+            android:padding="16dp"
             app:layout_constraintBottom_toTopOf="@+id/address"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -117,12 +122,14 @@
             android:id="@+id/address"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/circular_shape"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
             android:ems="10"
+            android:gravity="center|right"
             android:hint="آدرس دقیق"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:padding="16dp"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -134,14 +141,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.05" />
+            app:layout_constraintGuide_percent="0.01" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.95" />
+            app:layout_constraintGuide_percent="0.99" />
 
         <TextView
             android:id="@+id/textView"
@@ -158,10 +165,10 @@
             android:id="@+id/next_button_down"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/circular_shape"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/button"
             android:text="مرحله بعد"
-            android:textSize="18dp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -173,14 +180,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.03" />
+            app:layout_constraintGuide_percent="0.01" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.97" />
+            app:layout_constraintGuide_percent="0.99" />
 
         <RadioGroup
             android:layout_width="0dp"
@@ -211,6 +218,17 @@
                 android:text="آقا"
                 android:textAlignment="center" />
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="ثبت نام"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/next_button_up"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -17,14 +17,66 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             tools:context=".ui.map.MapsFragment" />
 
         <ImageView
             android:id="@+id/imageView3"
+            android:layout_width="55dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="30dp"
+            android:src="@drawable/ic_baseline_location_on_24" />
+
+        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_baseline_location_on_24" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/button"
+            android:text="تایید موقعیت"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#E6FFFFFF"
+            android:backgroundTint="#E6FFFFFF"
+            android:padding="16dp"
+            android:text="موقعیت روی نقشه"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#E6FFFFFF"
+            android:backgroundTint="#E6FFFFFF"
+            android:padding="16dp"
+            android:text="موقعیت موردنظر خود را روی نقشه مشخص کنید"
+            android:textSize="18sp" />
 
 
     </RelativeLayout>

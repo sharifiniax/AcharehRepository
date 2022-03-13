@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/achareh_nav"
-    app:startDestination="@id/mapsFragment">
+    app:startDestination="@id/informationFragment">
 
     <fragment
         android:id="@+id/informationFragment"
