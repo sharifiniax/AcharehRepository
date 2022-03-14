@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">InformationActivity</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">AcharehInterview</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="completeInformation">لطفا اطلاعات ورود خود را وارد نمایید.</string>

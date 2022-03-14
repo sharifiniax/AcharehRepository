@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
@@ -51,4 +52,18 @@ dependencies {
     def lifecycle_version = "2.4.1"
     implementation "androidx.navigation:navigation-fragment:$lifecycle_version"
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+
+
+    //retrofit
+    def retrofit_version = "2.6.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.8.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+
+    //Hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
+
+
 }

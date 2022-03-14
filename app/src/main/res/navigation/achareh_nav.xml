@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/achareh_nav"
-    app:startDestination="@id/informationFragment">
+    app:startDestination="@id/showDataFragment">
 
     <fragment
         android:id="@+id/informationFragment"
-        android:name="co.achareh.interview.ui.enterinfo.InformationFragment"
+        android:name="co.achareh.interview.ui.fillform.information.InformationFragment"
         android:label="fragment_information"
         tools:layout="@layout/fragment_information" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="co.achareh.interview.ui.map.MapsFragment"
+        android:name="co.achareh.interview.ui.fillform.map.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/showDataFragment"
-        android:name="co.achareh.interview.ui.showinfo.ShowDataFragment"
+        android:name="co.achareh.interview.ui.fillform.showinfo.ShowDataFragment"
         android:label="fragment_show_data"
         tools:layout="@layout/fragment_show_data" >
         <action
